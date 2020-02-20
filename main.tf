@@ -278,6 +278,11 @@ data:
 CONFIGMAPAWSAUTH
 }
 
+output "config_map_aws_auth" {
+  value = "${local.config_map_aws_auth}"
+}
+
+
 
 
 resource "aws_iam_role_policy_attachment" "worker-node-AmazonEKSWorkerNodePolicy" {
